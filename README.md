@@ -1,4 +1,4 @@
-# Send Japabit Lessons to Google Calendar
+# Send JapaTalk Lessons to Google Calendar
 
 This is a Chrome Extension--my first Chrome Extension.
 
