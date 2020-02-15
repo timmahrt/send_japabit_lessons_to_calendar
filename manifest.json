@@ -1,0 +1,32 @@
+{
+    "name": "Add japatalk classes to calendar",
+    "version": "1.0",
+    "description": "This adds japatalk classes to google calendar.  Activate the feature on the japatalk calendar page.",
+    "permissions": ["activeTab", "declarativeContent", "storage"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.japatalk.com/en/reservation_calendar.php"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/add_to_calendar16.png",
+        "32": "images/add_to_calendar32.png",
+        "48": "images/add_to_calendar48.png",
+        "128": "images/add_to_calendar128.png"
+      }
+    },
+    "icons": {
+      "16": "images/add_to_calendar16.png",
+      "32": "images/add_to_calendar32.png",
+      "48": "images/add_to_calendar48.png",
+      "128": "images/add_to_calendar128.png"
+    },
+    "manifest_version": 2
+}
